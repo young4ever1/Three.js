@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #1e1a20;
+  cursor: pointer;
+}
+
+.point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.point:hover .point_text {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.point.visible .point_tootip{
+  transform: scale(1,1);
+}
+
+.point_tootip {
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  transform: scale(0,0);
+  transition: transform 0.3s;
+  /* cursor: help; */
+  /* font-weight: bold; */
+}
+
+.point_text {
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: -70px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+/* 加载条 */
+.loading-bar {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+
+  /* 过渡动画 */
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: all 0.5s;
+  will-change: transform;
+}
+
+/* 取消加载条 */
+.enable {
+  transform-origin: top right;
+  transition: transform 1.5s ease-in-out;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.word {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 7vmin;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: bold;
+}
+
+.word:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+#provinceInfo {
+  position: absolute;
+  z-index: 2;
+  background: #3c61f4cb;
+  /* background: rgb(255, 255, 255); */
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  border: solid 1px rgba(227, 226, 226, 0.63);
+  visibility: hidden;
+}

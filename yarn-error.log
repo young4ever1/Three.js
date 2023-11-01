@@ -1,0 +1,62 @@
+Arguments: 
+  D:\nodeFile\node\node.exe D:\bin\yarn.js add copy-webpack-plugin --save
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;Git\cmd;bin\;C:\Program Files\dotnet\;C:\Program Files (x86)\NetSarang\Xshell 7\;D:\bin\;D:\nodeFile\nvm\nvm;D:\nodeFile\node;C:\Users\Pro\AppData\Local\pnpm;C:\Users\Pro\AppData\Local\Microsoft\WindowsApps;Microsoft VS Code\bin;C:\Users\Pro\AppData\Local\Yarn\bin;D:\nodeFile\nvm\nvm;D:\nodeFile\node;D:\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.8.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.20.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)
+
+npm manifest: 
+  {
+    "name": "webpack-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack",
+      "dev": "webpack-dev-server --open",
+      "deploy": "vercel --prod"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "axios": "^0.27.2",
+      "clean-webpack-plugin": "^4.0.0",
+      "mockjs": "^1.1.0",
+      "three": "^0.145.0",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0",
+      "webpack-dev-server": "^4.10.1"
+    },
+    "dependencies": {
+      "babel-loader": "^8.2.5",
+      "cannon": "^0.6.2",
+      "css-loader": "^6.7.1",
+      "dat.gui": "^0.7.9",
+      "file-loader": "^6.2.0",
+      "gsap": "^3.5.1",
+      "html-webpack-plugin": "^5.5.0",
+      "mini-css-extract-plugin": "^2.6.1",
+      "style-loader": "^3.3.1",
+      "url-loader": "^4.1.1",
+      "vercel": "^23.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
