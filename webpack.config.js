@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const path = require('path');
 module.exports = {
     mode: 'development',
-    entry: './src/js/Loading_progress/index.js',
+    entry: './src/js/Shaders_patterns/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js',
