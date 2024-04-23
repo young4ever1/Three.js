@@ -9,7 +9,7 @@ const scene = new THREE.Scene();
 
 // * Lights
 // * 环境光
-const ambinetLight = new THREE.AmbientLight(0xffffff, 0.5);
+const ambinetLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambinetLight);
 
 
