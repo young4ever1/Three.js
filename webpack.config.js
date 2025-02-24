@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const path = require('path');
 module.exports = {
     mode: 'development',
-    entry: './src/js/GlbFn/index.js',
+    entry: './src/js/China_map/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js',

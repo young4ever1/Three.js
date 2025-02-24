@@ -5,7 +5,7 @@ import * as dat from 'dat.gui'
 // * 中国地图信息
 import chinaJson from '@util/china.json'
 import chinaLine from '@util/chinaLine.json'
-import chinaDrawFnList from '@util/china_map_draw'
+import chinaDrawFnList from '../../util/china_map_draw'
 import chinaEventFnList from '@util/china_detail_click'
 
 // * Gui
